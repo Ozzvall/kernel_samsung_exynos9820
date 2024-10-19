@@ -1433,8 +1433,7 @@ static void ip6_negative_advice(struct sock *sk,
 		rcu_read_unlock();
 		return;
 	}
-	sk_dst_reset(sk);
-}
+	sk_dst_reset(sk);}
 
 static void ip6_link_failure(struct sk_buff *skb)
 {
